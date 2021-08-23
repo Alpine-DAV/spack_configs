@@ -29,6 +29,7 @@ packages:
       szip: [libszip, libaec]
       tbb: [intel-tbb]
       unwind: [libunwind]
+      uuid: [util-linux-uuid, libuuid]
     permissions:
       read: world
       write: user

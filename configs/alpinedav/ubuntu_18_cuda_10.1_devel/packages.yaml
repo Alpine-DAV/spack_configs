@@ -6,6 +6,7 @@ packages:
       mpi: [mpich]
       blas: [netlib-lapack]
       lapack: [netlib-lapack]
+      uuid: [util-linux-uuid, libuuid]
   cuda:
     buildable: false
     externals:
