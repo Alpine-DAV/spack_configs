@@ -1,2 +1,2 @@
-# spack_envs
-spack envs
+# spack_configs
+shared spack configs repo
