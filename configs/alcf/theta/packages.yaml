@@ -52,5 +52,3 @@ packages:
     - modules:
       - cray-mpich/7.6.3
       spec: mpich@7.6.3
-  conduit:
-    version: [master]

@@ -33,15 +33,8 @@ packages:
       read: world
       write: user
 # custom variants
-  conduit:
-    version: [master]
   python:
     variants: +shared~dbm
-  # python 2 constraints
-  py-sphinx:
-    version: [1.8.4]
-  py-numpy:
-    version: [1.16.5]
   cmake:
     variants: ~openssl~ncurses
   hwloc:

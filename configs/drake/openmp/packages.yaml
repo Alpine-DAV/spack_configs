@@ -22,8 +22,6 @@ packages:
       tbb: [intel-tbb]
       jpeg: [libjpeg-turbo, libjpeg]
 # custom variants
-  conduit:
-    version: [master]
   python:
     variants: +shared~dbm
   cmake:

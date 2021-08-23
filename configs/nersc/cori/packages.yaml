@@ -29,8 +29,6 @@ packages:
     externals:
     - prefix: /usr
       spec: perl
-  conduit:
-    version: [master]
   cmake:
     buildable: false
     externals:

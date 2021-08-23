@@ -12,8 +12,6 @@ packages:
     externals:
     - prefix: /opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/
       spec: mvapich2
-  conduit:
-    version: [master]
   perl:
     buildable: false
     externals:

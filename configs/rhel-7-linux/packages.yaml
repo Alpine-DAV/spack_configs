@@ -22,8 +22,6 @@ packages:
       jpeg: [libjpeg-turbo, libjpeg]
     variants: ~openmp
 # custom variants
-  conduit:
-    version: [master]
   python:
     variants: +shared~dbm
   cmake:
