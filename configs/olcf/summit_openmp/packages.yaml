@@ -24,7 +24,7 @@ packages:
       uuid: [util-linux-uuid, libuuid]
 # choices
   hdf5:
-    variant: ~mpi
+    variants: ~mpi
   python:
     variants: ~dbm
   py-numpy:
