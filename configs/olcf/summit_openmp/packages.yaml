@@ -1,6 +1,6 @@
 packages:
   all:
-    variants: +openmp
+    variants: +openmp+python
     compiler: [gcc, intel, pgi, clang, xl, nag]
     providers:
       awk: [gawk]
@@ -22,10 +22,14 @@ packages:
       tbb: [intel-tbb]
       jpeg: [libjpeg-turbo, libjpeg]
       uuid: [util-linux-uuid, libuuid]
+# choices
+  hdf5:
+    variant: ~mpi
   python:
     variants: ~dbm
   py-numpy:
     variants: ~blas~lapack
+# system libs
   perl:
     buildable: false
     externals:
@@ -36,13 +40,11 @@ packages:
     externals:
     - prefix: /usr
       spec: pkg-config
-# ORNL blueos CUDA
   cuda:
     buildable: false
     externals:
     - prefix: /sw/summit/cuda/11.0.3/
       spec: cuda@11.0.3
-# ORNL blueos mpi
   spectrum-mpi:
     buildable: false
     externals:
