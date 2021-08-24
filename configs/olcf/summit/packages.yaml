@@ -13,7 +13,7 @@ packages:
       lapack: [openblas]
       mkl: [intel-mkl]
       mpe: [mpe2]
-      mpi: [mvapich2]
+      mpi: [spectrum-mpi]
       opencl: [pocl]
       openfoam: [openfoam-com, openfoam-org, foam-extend]
       pil: [py-pillow]
@@ -40,15 +40,11 @@ packages:
   cuda:
     buildable: false
     externals:
-    - prefix: /sw/summit/cuda/10.1.243
-      spec: cuda@10.1.243
+    - prefix: /sw/summit/cuda/11.0.3/
+      spec: cuda@11.0.3
 # ORNL blueos mpi
-# note, we need to fake this as an existing mpi package
-# so even though this is spectrum mpi, we call it mvapich2
-  mvapich2:
+  spectrum-mpi:
     buildable: false
     externals:
-    - prefix: /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/
-      spec: mvapich2@2.2%xl
-    - prefix: /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-6.4.0/spectrum-mpi-10.3.1.2-20200121-awz2q5brde7wgdqqw4ugalrkukeub4eb/
-      spec: mvapich2@2.2%gcc
+    - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-b5zk3valzzwupvryqfd7ouwwir73wats/
+      spec: spectrum-mpi@10.4.0%gcc
