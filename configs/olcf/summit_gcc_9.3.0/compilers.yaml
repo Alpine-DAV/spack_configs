@@ -1,0 +1,16 @@
+compilers:
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules:
+    - gcc@9.3.0
+    operating_system: rhel8
+    paths:
+      cc:  /sw/summit/gcc/9.3.0-2/bin/gcc
+      cxx: /sw/summit/gcc/9.3.0-2/bin/g++
+      f77: /sw/summit/gcc/9.3.0-2/bin/gfortran
+      fc: /sw/summit/gcc/9.3.0-2/bin/gfortran
+    spec: gcc@9.3.0
+    target: ppc64le
+
