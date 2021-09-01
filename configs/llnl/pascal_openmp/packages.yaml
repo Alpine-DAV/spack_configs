@@ -51,6 +51,8 @@ packages:
     externals:
     - prefix: /usr/tce/packages/mvapich2/mvapich2-2.2-gcc-4.9.3
       spec: mvapich2@2.2%gcc@4.9.3
+    - prefix: /usr/tce/packages/mvapich2/mvapich2-2.3-gcc-8.1.0
+      spec: mvapich2@2.3%gcc@8.1.0
     - prefix: /usr/tce/packages/mvapich2/mvapich2-2.3-gcc-8.3.1
       spec: mvapich2@2.3%gcc@8.3.1
     - prefix: /usr/tce/packages/mvapich2/mvapich2-2.2-intel-17.0.0
