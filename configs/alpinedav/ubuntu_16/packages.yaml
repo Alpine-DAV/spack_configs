@@ -62,10 +62,5 @@ packages:
       spec: tar
   conduit:
     version: [develop]
-  # python 2 constraints
-  py-sphinx:
-    version: [1.8.4]
-  py-jinja2:
-    version: [2.11.3]
   py-numpy:
     version: [1.16.5]
