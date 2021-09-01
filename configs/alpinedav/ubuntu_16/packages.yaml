@@ -60,7 +60,3 @@ packages:
     externals:
     - prefix: /usr
       spec: tar
-  conduit:
-    version: [develop]
-  py-numpy:
-    version: [1.16.5]
