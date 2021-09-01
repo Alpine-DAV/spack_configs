@@ -29,6 +29,8 @@ packages:
     externals:
     - prefix: /usr/tce/packages/cmake/cmake-3.14.5/
       spec: cmake@3.14.5
+    - prefix: /usr/tce/packages/cmake/cmake-3.21.1/
+      spec: cmake@3.21.1
   perl:
     buildable: false
     externals:
@@ -44,8 +46,8 @@ packages:
     buildable: false
     externals:
     - modules:
-      - cuda/10.1.168
-      spec: cuda@10.1.168
+      - cuda/11.0.2
+      spec: cuda@11.0.2
 # LLNL toss3 mvapich2
   mvapich2:
     buildable: false
