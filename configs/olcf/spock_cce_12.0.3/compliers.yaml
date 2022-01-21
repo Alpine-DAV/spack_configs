@@ -1,0 +1,16 @@
+compilers:
+  - compiler:
+      spec: cce@12.0.3
+      paths:
+        cc: /opt/cray/pe/craype/2.7.11/bin/cc
+        cxx: /opt/cray/pe/craype/2.7.11/bin/CC
+        f77: /opt/cray/pe/craype/2.7.11/bin/ftn
+        fc: /opt/cray/pe/craype/2.7.11/bin/ftn
+      flags: {}
+      operating_system: sles15
+      target: any
+      modules:
+      - PrgEnv-cray
+      - cce/12.0.3
+
+
