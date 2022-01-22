@@ -1,5 +1,6 @@
 packages:
   all:
+    variants: cuda_arch=80 +cuda~openmp~python~shared~mfem
     compiler: [gcc@11.2.0]
     providers:
       mpi: [mpich]
