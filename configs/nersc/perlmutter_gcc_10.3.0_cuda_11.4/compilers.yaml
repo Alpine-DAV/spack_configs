@@ -9,11 +9,12 @@ compilers:
     - PrgEnv-gnu
     - cudatoolkit/21.9_11.4
     - cpe-cuda/21.12
+    - libfabric
     operating_system: sles15
     paths:
-      cc: gcc
-      cxx: g++
-      f77: gfortran
-      fc: gfortran
+      cc: /opt/cray/pe/craype/2.7.12/bin/cc #gcc
+      cxx: /opt/cray/pe/craype/2.7.12/bin/CC #g++
+      f77: /opt/cray/pe/craype/2.7.12/bin/ftn # gfortran
+      fc: /opt/cray/pe/craype/2.7.12/bin/ftn #gfortran
     spec: gcc@10.3.0
     target: any

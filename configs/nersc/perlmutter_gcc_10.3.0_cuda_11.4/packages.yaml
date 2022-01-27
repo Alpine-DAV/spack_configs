@@ -7,7 +7,7 @@ packages:
       blas: [openblas]
       lapack: [openblas]
       uuid: [util-linux-uuid, libuuid]
-  mpich:
+  cray-mpich:
     version: [8.1.12]
     buildable: false
     providers: {}
@@ -15,7 +15,8 @@ packages:
     externals:
     - modules:
       - cray-mpich/8.1.12
-      spec: mpich@8.1.12
+      spec: cray-mpich@8.1.12
+      prefix: /opt/cray/pe/mpich/8.1.12/ofi/gnu/9.1/
   openssl:
     buildable: false
     externals:
