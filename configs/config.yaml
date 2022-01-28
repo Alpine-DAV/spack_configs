@@ -81,7 +81,8 @@ config:
   # certifiates. (e.g., curl will use use the -k option)
   verify_ssl: true
 
-
+  url_fetch_method: curl
+ 
   # If set to true, Spack will attempt to build any compiler on the spec
   # that is not already available. If set to False, Spack will only use
   # compilers already configured in compilers.yaml
