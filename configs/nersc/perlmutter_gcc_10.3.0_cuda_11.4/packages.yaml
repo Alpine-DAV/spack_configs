@@ -17,6 +17,13 @@ packages:
       - cray-mpich/8.1.12
       spec: cray-mpich@8.1.12
       prefix: /opt/cray/pe/mpich/8.1.12/ofi/gnu/9.1/
+  cmake:
+    buildable: false
+    externals:
+    - modules:
+      - cmake/3.22.0
+      spec: cmake@3.22.0
+      prefix: /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/
   openssl:
     buildable: false
     externals:
