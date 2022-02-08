@@ -1,6 +1,6 @@
 packages:
   all:
-    variants: variants: +openmp+python
+    variants: +openmp+python
     compiler: [gcc, intel, pgi, clang, xl, nag]
     providers:
       awk: [gawk]
@@ -26,7 +26,7 @@ packages:
   hdf5:
     variants: ~mpi
   python:
-    variants: ~dbm
+    variants: ~dbm~libxml2
   py-numpy:
     variants: ~blas~lapack
 # system libs
