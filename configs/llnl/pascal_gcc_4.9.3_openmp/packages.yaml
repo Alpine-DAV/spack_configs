@@ -1,6 +1,6 @@
 packages:
   all:
-    variants: +openmp+python
+    variants: variants: +openmp+python
     compiler: [gcc, intel, pgi, clang, xl, nag]
     providers:
       awk: [gawk]
@@ -22,13 +22,14 @@ packages:
       tbb: [intel-tbb]
       jpeg: [libjpeg-turbo, libjpeg]
       uuid: [util-linux-uuid, libuuid]
+# choices
+  hdf5:
+    variants: ~mpi
   python:
     variants: ~dbm
-  cmake:
-    buildable: false
-    externals:
-    - prefix: /usr/tce/packages/cmake/cmake-3.14.5/
-      spec: cmake@3.14.5
+  py-numpy:
+    variants: ~blas~lapack
+# system libs
   perl:
     buildable: false
     externals:
@@ -43,9 +44,17 @@ packages:
   cuda:
     buildable: false
     externals:
-    - modules:
-      - cuda/9.2.88
-      spec: cuda@9.2
+    - prefix: /usr/tce/packages/cuda/cuda-10.1.168/
+      spec: cuda@10.1.168
+      modules:
+      - cuda/10.1.168 
+  cmake:
+    buildable: false
+    externals:
+    - prefix: /usr/tce/packages/cmake/cmake-3.21.1/
+      spec: cmake@3.21.1%gcc
+      modules:
+         - cmake/3.21.1
 # LLNL toss3 mvapich2
   mvapich2:
     buildable: false
