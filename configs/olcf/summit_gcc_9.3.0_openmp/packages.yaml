@@ -1,6 +1,6 @@
 packages:
   all:
-    variants: cuda_arch=70 +cuda~openmp~python~shared~mfem
+    variants: variants: +openmp+python
     compiler: [gcc, intel, pgi, clang, xl, nag]
     providers:
       awk: [gawk]
@@ -23,6 +23,8 @@ packages:
       jpeg: [libjpeg-turbo, libjpeg]
       uuid: [util-linux-uuid, libuuid]
 # choices
+  hdf5:
+    variants: ~mpi
   python:
     variants: ~dbm
   py-numpy:
@@ -38,31 +40,21 @@ packages:
     externals:
     - prefix: /usr
       spec: pkg-config
-  cmake:
-    buildable: false
-    externals:
-      - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.3.0/cmake-3.20.2-vtrkiq4jcfz6wnt5z3yiht3igee2zkk6/ 
-        spec: cmake@3.20.2
-        modules:
-          - cmake/3.20.2
-  hdf5:
-    buildable: false
-    externals:
-      - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.3.0/hdf5-1.10.7-4b77lkzgqo6zq6waojy3c24asrm5tu5h/
-        spec: hdf5@1.10.7
-        modules:
-          - hdf5/1.10.7
   cuda:
     buildable: false
     externals:
     - prefix: /sw/summit/cuda/11.0.3/
       spec: cuda@11.0.3
-      modules:
-        - cuda/11.0.3
   spectrum-mpi:
     buildable: false
     externals:
     - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.3.0/spectrum-mpi-10.4.0.3-20210112-2s7kpbzydf6val7k2d3e6cz3zdhtcwlw/
       spec: spectrum-mpi@10.4.0%gcc
-      modules: 
-        - spectrum-mpi/10.4.0.3-20210112
+  cmake:
+    buildable: false
+    externals:
+    - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.21.3-ryec5weswyjqidpbl2b5ye6gvq4uumod/
+      spec: cmake@3.21.3%gcc
+      modules:
+         - cmake/3.21.3
+
