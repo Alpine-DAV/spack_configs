@@ -47,14 +47,14 @@ packages:
     - prefix: /usr/tce/packages/cuda/cuda-10.1.168/
       spec: cuda@10.1.168
       modules:
-      - cuda/10.1.168 
+        - cuda/10.1.168 
   cmake:
     buildable: false
     externals:
     - prefix: /usr/tce/packages/cmake/cmake-3.21.1/
       spec: cmake@3.21.1%gcc
       modules:
-         - cmake/3.21.1
+        - cmake/3.21.1
 # LLNL toss3 mvapich2
   mvapich2:
     buildable: false
