@@ -7,14 +7,14 @@ compilers:
     # we need this dance to get the compilers to work, it ends up loading
     # gcc/10.3.0
     - PrgEnv-gnu
-    - cudatoolkit/21.9_11.4
-    - cpe-cuda/21.12
+    - cudatoolkit/11.4
+    - cpe-cuda/22.02
     - libfabric
     operating_system: sles15
     paths:
-      cc: /opt/cray/pe/craype/2.7.12/bin/cc #gcc
-      cxx: /opt/cray/pe/craype/2.7.12/bin/CC #g++
-      f77: /opt/cray/pe/craype/2.7.12/bin/ftn # gfortran
-      fc: /opt/cray/pe/craype/2.7.12/bin/ftn #gfortran
+      cc: /opt/cray/pe/craype/2.7.13/bin/cc #gcc
+      cxx: /opt/cray/pe/craype/2.7.13/bin/CC #g++
+      f77: /opt/cray/pe/craype/2.7.13/bin/ftn # gfortran
+      fc: /opt/cray/pe/craype/2.7.13/bin/ftn #gfortran
     spec: gcc@10.3.0
     target: any
