@@ -1,3 +1,5 @@
+# warpx packages from:
+# https://warpx.readthedocs.io/en/latest/install/hpc/summit.html
 packages:
   all:
     variants: cuda_arch=70 +cuda~openmp~python~shared~mfem
@@ -55,10 +57,10 @@ packages:
   cuda:
     buildable: false
     externals:
-    - prefix: /sw/summit/cuda/11.0.3/
-      spec: cuda@11.0.3
+    - prefix: /sw/summit/cuda/11.3.1/
+      spec: cuda@11.3.1
       modules:
-        - cuda/11.0.3
+        - cuda/11.3.1
   spectrum-mpi:
     buildable: false
     externals:
