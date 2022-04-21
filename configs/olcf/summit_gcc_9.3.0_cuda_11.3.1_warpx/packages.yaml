@@ -50,7 +50,7 @@ packages:
   hdf5:
     buildable: false
     externals:
-      - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.3.0/hdf5-1.10.7-4b77lkzgqo6zq6waojy3c24asrm5tu5h/
+      - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.3.0/hdf5-1.10.7-erpzjzv6dakrblzacmwiuyrgg54wawqa/
         spec: hdf5@1.10.7
         modules:
           - hdf5/1.10.7
@@ -68,11 +68,5 @@ packages:
       spec: spectrum-mpi@10.4.0%gcc
       modules: 
         - spectrum-mpi/10.4.0.3-20210112
-  cmake:
-    buildable: false
-    externals:
-    - prefix: /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.21.3-ryec5weswyjqidpbl2b5ye6gvq4uumod/
-      spec: cmake@3.21.3%gcc
-      modules:
-         - cmake/3.21.3
+
 
