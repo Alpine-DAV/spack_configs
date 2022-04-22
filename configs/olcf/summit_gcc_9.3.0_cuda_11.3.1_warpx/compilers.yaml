@@ -5,6 +5,7 @@ compilers:
     flags: {}
     modules:
     - gcc@9.3.0
+    - spectrum-mpi/10.4.0.3-20210112
     operating_system: rhel8
     paths:
       cc:  /sw/summit/gcc/9.3.0-2/bin/gcc
