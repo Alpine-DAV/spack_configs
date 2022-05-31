@@ -1,0 +1,39 @@
+packages:
+  all:
+    variants: cuda_arch=80 +cuda~openmp~python~shared~mfem
+    compiler: [gcc@11.2.0]
+    providers:
+      mpi: [mpich]
+      blas: [openblas]
+      lapack: [openblas]
+      uuid: [util-linux-uuid, libuuid]
+  cray-mpich:
+    version: [8.1.12]
+    buildable: false
+    providers: {}
+    compiler: []
+    externals:
+    - modules:
+      - cray-mpich/8.1.15
+      spec: cray-mpich@8.1.15
+      prefix: /opt/cray/pe/mpich/8.1.15/ofi/gnu/9.1/
+  cmake:
+    buildable: false
+    externals:
+    - modules:
+      - cmake/3.22.0
+      spec: cmake@3.22.0
+      prefix: /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/
+  openssl:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: openssl
+  cuda:
+    buildable: false
+    externals:
+    - prefix: /opt/nvidia/hpc_sdk/Linux_x86_64/21.11/cuda/11.5/bin/nvcc
+      spec: cuda@11.5.0
+      modules:
+        - cudatoolkit/11.5
+
