@@ -51,11 +51,6 @@ packages:
     externals:
     - prefix: /usr
       spec: pkg-config@0.29.2
-  openssl:
-    buildable: false
-    externals:
-    - prefix: /usr
-      spec: openssl@1.1.1o
   perl:
     buildable: false
     externals:
