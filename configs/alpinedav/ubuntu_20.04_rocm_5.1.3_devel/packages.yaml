@@ -1,0 +1,88 @@
+packages:
+  all:
+    variants: cuda_arch=70
+    compiler: [clang]
+    providers:
+      mpi: [mpich]
+      blas: [netlib-lapack]
+      lapack: [netlib-lapack]
+      uuid: [util-linux-uuid, libuuid]
+  hip:
+    buildable: false
+    externals:
+    - prefix: /opt/rocm/hip
+      spec: hip@5.1.3
+  llvm-amdgpu:
+    buildable: false
+    externals:
+    - prefix: /opt/rocm/llvm
+      spec: llvm-amdgpu@5.1.3
+  hsa-rocr-dev:
+    buildable: false
+    externals:
+    - prefix: /opt/rocm/
+      spec: hsa-rocr-dev@5.1.3
+  rocminfo:
+    buildable: false
+    externals:
+    - prefix: /opt/rocm/
+    - spec: rocminfo@5.1.3
+  rocm-device-libs:
+    buildable: false
+    externals:
+    - prefix: /opt/rocm/
+      spec: rocm-device-libs@5.1.3
+  # Note: we have to add versions here 
+  # I just used the preferred vers as of our branch
+  # this will go stale and will have to be updated
+  # everytime we update spack ...
+  netlib-lapack:
+    buildable: false
+    externals:
+    - prefix: /usr/
+      spec: netlib-lapack@3.10.1
+  mpich:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: mpich@4.0.2
+  bzip2:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: bzip2@1.0.8
+  readline:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: readline@8.1
+  sqlite:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: sqlite@3.38.5
+  ncurses:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: ncurses@6.2
+  pkg-config:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: pkg-config@0.29.2
+  openssl:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: openssl@1.1.1o
+  perl:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: perl@5.34.1
+  tar:
+    buildable: false
+    externals:
+    - prefix: /usr
+      spec: tar@1.34
