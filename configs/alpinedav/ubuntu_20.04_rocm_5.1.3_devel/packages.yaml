@@ -1,6 +1,6 @@
 packages:
   all:
-    variants: amdgpu_target=gfx908
+    variants: amdgpu_target=gfx803
     compiler: [clang]
     providers:
       mpi: [mpich]
@@ -26,7 +26,7 @@ packages:
     buildable: false
     externals:
     - prefix: /opt/rocm/
-    - spec: rocminfo@5.1.3
+      spec: rocminfo@5.1.3
   rocm-device-libs:
     buildable: false
     externals:
