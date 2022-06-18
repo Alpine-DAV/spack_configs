@@ -31,11 +31,6 @@ packages:
     externals:
     - prefix: /usr
       spec: bzip2@1.0.8
-  readline:
-    buildable: false
-    externals:
-    - prefix: /usr
-      spec: readline@8.1
   sqlite:
     buildable: false
     externals:
