@@ -11,7 +11,7 @@ packages:
     buildable: false
     externals:
     - prefix: /usr/local/cuda/
-      spec: cuda@11.4
+      spec: cuda@11.4.0
   # Note: we have to add versions here 
   # I just used the preferred vers as of our branch
   # this will go stale and will have to be updated
