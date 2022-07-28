@@ -34,12 +34,12 @@ packages:
     buildable: false
     externals:
     - prefix: /usr
-      spec: perl
+      spec: perl@5.26.3
   pkg-config:
     buildable: false
     externals:
     - prefix: /usr
-      spec: pkg-config
+      spec: pkg-config@1.4.2
   cmake:
     buildable: false
     externals:
