@@ -81,8 +81,8 @@ compilers:
     paths:
       cc: /usr/bin/clang
       cxx: /usr/bin/clang++
-      f77: /usr/local/bin/gfortran
-      fc: /usr/local/bin/gfortran
+      f77: /opt/homebrew/bin/gfortran
+      fc: /opt/homebrew/bin/gfortran
     flags: {}
     operating_system: monterey
     target: aarch64
