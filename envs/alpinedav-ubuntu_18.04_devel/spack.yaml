@@ -9,6 +9,11 @@ spack:
   concretizer:
     unify: true
   packages:
+    all:
+    providers:
+      mpi: [mpich]
+      blas: [netlib-lapack]
+      lapack: [netlib-lapack]
     binutils:
       externals:
       - spec: binutils@2.30
@@ -48,6 +53,11 @@ spack:
       externals:
       - spec: hwloc@1.11.9
         prefix: /usr
+      buildable: false
+    netlib-lapack:
+      externals:
+      - spec: netlib-lapack@3.10.1
+        prefix: /usr/
       buildable: false
     mpich:
       externals:
