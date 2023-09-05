@@ -10,10 +10,10 @@ spack:
     unify: true
   packages:
     all:
-    providers:
-      mpi: [mpich]
-      blas: [netlib-lapack]
-      lapack: [netlib-lapack]
+      providers:
+        mpi: [mpich]
+        blas: [netlib-lapack]
+        lapack: [netlib-lapack]
     binutils:
       externals:
       - spec: binutils@2.30
