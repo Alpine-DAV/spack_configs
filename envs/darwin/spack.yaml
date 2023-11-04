@@ -3,13 +3,17 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
-  specs: []
+  specs: 
+    - hdf5~mpi
+    - silo~mpi
+    - mpich
+    - py-mpi4py@3.0.3
   view: true
   concretizer:
     unify: true
   compilers:
   - compiler:
-      spec: apple-clang@=15.0.0
+      spec: apple-clang@=14.0.0
       paths:
         cc: /usr/bin/clang
         cxx: /usr/bin/clang++
