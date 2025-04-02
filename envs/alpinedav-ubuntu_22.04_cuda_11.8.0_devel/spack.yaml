@@ -89,3 +89,8 @@ spack:
       - spec: perl@5.26.1~cpanm+open+shared+threads
         prefix: /usr
       buildable: false
+    curl:
+      externals:
+      - spec: curl@"7.81.1
+        prefix: /usr
+      buildable: false
