@@ -91,6 +91,6 @@ spack:
       buildable: false
     curl:
       externals:
-      - spec: curl@"7.81.1
+      - spec: curl@7.81.1
         prefix: /usr
       buildable: false
