@@ -8,6 +8,8 @@ spack:
     - silo~mpi
     - mpich
     - py-mpi4py@3.0.3
+    - caliper
+    - conduit+hdf5+silo+caliper
   view: true
   concretizer:
     unify: true
