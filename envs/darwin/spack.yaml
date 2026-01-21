@@ -3,12 +3,7 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
-  specs: 
-    - hdf5~mpi
-    - silo~mpi
-    - mpich
-    - py-mpi4py
-    - caliper
+  specs: []
   view: true
   concretizer:
     unify: true
