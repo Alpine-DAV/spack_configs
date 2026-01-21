@@ -16,8 +16,12 @@ spack:
         lapack: [netlib-lapack]
     cuda:
       externals:
-      - prefix: /usr/local/cuda/
+      - prefix: /usr/local/cuda-11.8/
         spec: cuda@11.8.0
+      - prefix: /usr/local/cuda-12.8/
+        spec: cuda@12.8.1
+      - prefix: /usr/local/cuda-12.9/
+        spec: cuda@12.9.1
       buildable: false
     binutils:
       externals:
@@ -87,10 +91,5 @@ spack:
     perl:
       externals:
       - spec: perl@5.26.1~cpanm+open+shared+threads
-        prefix: /usr
-      buildable: false
-    curl:
-      externals:
-      - spec: curl@7.81.1
         prefix: /usr
       buildable: false
