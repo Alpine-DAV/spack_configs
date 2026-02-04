@@ -6,7 +6,7 @@ spack:
   specs:
     - hdf5~mpi
     - silo
-    - mpich
+    - openmpi
     - py-mpi4py
     - caliper
   view: true
