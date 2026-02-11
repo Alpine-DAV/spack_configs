@@ -63,7 +63,7 @@ spack:
       - spec: netlib-lapack@3.10.1
         prefix: /usr/
       buildable: false
-    mpich:
+    openmpi:
       externals:
       - spec: openmpi@4.1
         prefix: /usr
