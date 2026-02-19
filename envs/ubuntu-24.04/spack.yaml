@@ -6,7 +6,7 @@ spack:
   specs:
     - hdf5~mpi
     - silo
-    - openmpi
+    - mpich
     - py-mpi4py
     - caliper
   view: true
@@ -15,7 +15,7 @@ spack:
   packages:
     all:
       providers:
-        mpi: [openmpi]
+        mpi: [mpich]
         blas: [netlib-lapack]
         lapack: [netlib-lapack]
     binutils:
@@ -63,9 +63,9 @@ spack:
       - spec: netlib-lapack@3.10.1
         prefix: /usr/
       buildable: false
-    openmpi:
+    mpich:
       externals:
-      - spec: openmpi@4.1
+      - spec: mpich@4.2
         prefix: /usr
       buildable: false
     ncurses:
